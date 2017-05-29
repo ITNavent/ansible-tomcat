@@ -1,0 +1,32 @@
+galaxy_info:
+  author: Carlos Rojas Matas (fork of Christoher Davenport's universal tomcat module)
+  description: Universal Tomcat Installer
+  company: Navent
+  license: MIT
+
+  min_ansible_version: 2.1
+
+  galaxy_tags:
+    - tomcat
+    - systemd
+    - deployment
+    - systems
+
+  platforms:
+    - name: Fedora
+      versions:
+        - 24
+        - 23
+    - name: Ubuntu
+      versions:
+        - xenial
+    - name: Debian
+      versions:
+        - jessie
+    - name: EL
+      versions:
+        - 7
+
+
+dependencies:
+
