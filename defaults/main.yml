@@ -46,11 +46,11 @@ tomcat_roles:
   - admin-gui
   - admin-script
 
-tomcat_users: [
+tomcat_users:
   - name: tomcat
     password: tomcat
     roles: "manager-gui,admin-gui"
-  ]
+  
 
 # This Edits And Allows Ansible To Configure These
 # Otherwise it does a default install
