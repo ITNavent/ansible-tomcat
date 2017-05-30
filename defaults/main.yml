@@ -48,8 +48,8 @@ tomcat_roles:
 
 tomcat_users: []
   - name: tomcat
-     password: tomcat
-     roles: "manager-gui,admin-gui"
+    password: tomcat
+    roles: "manager-gui,admin-gui"
   
 
 # This Edits And Allows Ansible To Configure These
