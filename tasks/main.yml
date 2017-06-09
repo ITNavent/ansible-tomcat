@@ -11,12 +11,14 @@
 
 # Here We Create The Group and User
 - name: Create Tomcat Group
+  ignore_errors: yes
   group:
     name: "{{ tomcat_user_group }}"
     state: present
-    ignore_errors: yes
+  
 
 - name: Create Tomcat user
+  ignore_errors: yes
   user:
     name: "{{ tomcat_user_name }}"
     home: "{{ tomcat_user_home }}"
@@ -24,7 +26,7 @@
     system: "{{ tomcat_user_system }}"
     createhome: true
     comment: "Tomcat Service User"
-    ignore_errors: yes
+
 
 - name: Check If Already Installed
   stat:
