@@ -14,6 +14,7 @@
   group:
     name: "{{ tomcat_user_group }}"
     state: present
+    ignore_errors: yes
 
 - name: Create Tomcat user
   user:
@@ -23,6 +24,7 @@
     system: "{{ tomcat_user_system }}"
     createhome: true
     comment: "Tomcat Service User"
+    ignore_errors: yes
 
 - name: Check If Already Installed
   stat:
@@ -187,7 +189,7 @@
     dest: "{{ tomcat_instance_path }}/webapps/"
     owner: "{{ tomcat_user_name }}"
     group: "{{ tomcat_user_group }}"
-    mode: 0755
+    mode: 0776
 
 - name: Install Service
   register: __tomcat_service
