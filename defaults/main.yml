@@ -129,3 +129,5 @@ tomcat_version_specific:
   "9.0.0.M18":
     checksum: md5:626e16b93de65b2a58714ed50f00d9f9
     web_xml_schema_version: 3.1
+
+newrelic-home: /home/ubuntu/navent/newrelic
