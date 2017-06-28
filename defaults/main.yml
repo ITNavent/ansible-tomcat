@@ -132,5 +132,5 @@ tomcat_version_specific:
 
 newrelic_home: /home/ubuntu/navent/newrelic
 java_args: ""
-java_min_memory: -Xms3g
-java_max_memory: -Xmx3g
+java_min_memory: -Xms1g
+java_max_memory: -Xmx1g
