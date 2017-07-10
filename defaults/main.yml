@@ -131,3 +131,7 @@ tomcat_version_specific:
     web_xml_schema_version: 3.1
 
 newrelic_home: /home/ubuntu/navent/newrelic
+java_args: ""
+java_min_memory: -Xms1g
+java_max_memory: -Xmx1g
+extra_set_env: ""
