@@ -1,3 +1,5 @@
 export JAVA_OPTS="${JAVA_OPTS} {{ java_args }} -javaagent:{{ newrelic_home }}/newrelic.jar"
 export CATALINA_OPTS="{{ java_min_memory}}"
 export CATALINA_OPTS="$CATALINA_OPTS {{ java_max_memory }}"
+
+{{extra_set_env}}

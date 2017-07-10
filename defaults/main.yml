@@ -134,3 +134,4 @@ newrelic_home: /home/ubuntu/navent/newrelic
 java_args: ""
 java_min_memory: -Xms1g
 java_max_memory: -Xmx1g
+extra_set_env: ""
