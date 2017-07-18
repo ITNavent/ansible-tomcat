@@ -34,6 +34,8 @@ tomcat_instance_path: "{{ tomcat_base_dir }}/tomcat"
 tomcat_prefer_ipv4: true
 tomcat_override_uri_encoding: ""
 tomcat_prefer_urandom: true
+tomcat_enable_compression: true
+tomcat_enable_double_http_header_size: true
 
 tomcat_instance: tomcat
 
@@ -74,7 +76,7 @@ tomcat_context_xml_extra: ""
 tomcat_disable_persistence_across_restarts: false
 
 # Custom Configuration Files
-tomcat_use_custom_server_xml: false
+tomcat_use_custom_server_xml: true
 # tomcat_custom_server_xml: Path
 tomcat_use_custom_web_xml: false
 # tomcat_custom_web_xml: Path

@@ -44,6 +44,13 @@
 {% if tomcat_override_uri_encoding not in (None, "") %}
                URIEncoding="{{ tomcat_override_uri_encoding }}"
 {% endif %}
+{% if tomcat_enable_compression not in (None, "") %}
+				compression="on"
+				compressableMimeType="text/html,text/xml,text/plain,text/css,text/javascript,application/javascript,application/json"
+{% endif %}
+{% if tomcat_enable_double_http_header_size not in (None, "") %}
+				maxHttpHeaderSize="16384"
+{% endif %}
     />
 
     <!--
