@@ -76,7 +76,7 @@ tomcat_context_xml_extra: ""
 tomcat_disable_persistence_across_restarts: false
 
 # Custom Configuration Files
-tomcat_use_custom_server_xml: true
+tomcat_use_custom_server_xml: false
 # tomcat_custom_server_xml: Path
 tomcat_use_custom_web_xml: false
 # tomcat_custom_web_xml: Path
