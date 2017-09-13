@@ -177,6 +177,14 @@
     group: "{{ tomcat_user_group }}"
     mode: 0640
 
+- name: Install shutdown file
+  template:
+    src: shutdown.sh.j2
+    dest: "{{ tomcat_instance_path }}/bin/shutdown.sh"
+    owner: "{{ tomcat_user_name }}"
+    group: "{{ tomcat_user_group }}"
+    mode: 0640
+    
 - name: Install Extra Libraries
   register: __tomcat_install_libs
   with_items: "{{ tomcat_extra_libs_path }}"

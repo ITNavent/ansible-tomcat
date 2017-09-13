@@ -137,3 +137,4 @@ java_args: ""
 java_min_memory: -Xms1g
 java_max_memory: -Xmx1g
 extra_set_env: ""
+tomcat_force_shutdown_by_pid: ""
