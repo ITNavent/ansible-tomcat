@@ -1,8 +1,8 @@
 export JAVA_OPTS="${JAVA_OPTS} {{ java_args }} -javaagent:{{ newrelic_home }}/newrelic.jar"
 export CATALINA_OPTS="{{ java_min_memory}}"
 export CATALINA_OPTS="$CATALINA_OPTS {{ java_max_memory }}"
-{% if tomcat_force_shutdown_by_pid not in (None, "") %}
-	export CATALINA_PID="$CATALINA_BASE/bin/catalina.pid"
+{% if tomcat_force_shutdown_by_pid not in (None, "", false) %}
+export CATALINA_PID="$CATALINA_BASE/bin/catalina.pid"
 {% endif %}
 
 {{extra_set_env}}

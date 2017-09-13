@@ -57,8 +57,8 @@ else
   fi
 fi
 
-{% if tomcat_force_shutdown_by_pid not in (None, "") %}
-	exec "$PRGDIR"/"$EXECUTABLE" stop "-force"
+{% if tomcat_force_shutdown_by_pid not in (None, "", false) %}
+exec "$PRGDIR"/"$EXECUTABLE" stop "-force"
 {% else %}
-	exec "$PRGDIR"/"$EXECUTABLE" stop "$@"
+exec "$PRGDIR"/"$EXECUTABLE" stop "$@"
 {% endif %}
