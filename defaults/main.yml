@@ -36,6 +36,7 @@ tomcat_override_uri_encoding: ""
 tomcat_prefer_urandom: true
 tomcat_enable_compression: true
 tomcat_enable_double_http_header_size: true
+tomcat_enable_http_header_size: 16384
 
 tomcat_instance: tomcat
 

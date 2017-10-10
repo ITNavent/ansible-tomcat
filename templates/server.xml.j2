@@ -49,7 +49,7 @@
 				compressableMimeType="text/html,text/xml,text/plain,text/css,text/javascript,application/javascript,application/json"
 {% endif %}
 {% if tomcat_enable_double_http_header_size not in (None, "") %}
-				maxHttpHeaderSize="16384"
+				maxHttpHeaderSize="{{ tomcat_enable_http_header_size }}"
 {% endif %}
     />
 
