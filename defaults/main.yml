@@ -36,6 +36,7 @@ tomcat_override_uri_encoding: ""
 tomcat_prefer_urandom: true
 tomcat_enable_compression: true
 tomcat_enable_double_http_header_size: true
+tomcat_enable_http_header_size: 16384
 
 tomcat_instance: tomcat
 
@@ -63,7 +64,9 @@ tomcat_configure_webapps: "{{ tomcat_configure }}"
 
 # These copy files across and will use basename
 tomcat_extra_libs_path: []
+tomcat_extra_libs_remote: no
 tomcat_webapps_path: []
+tomcat_webapps_remote: no
 
 # Strings That Allow you to modify your
 # tomcat instance in a predictable fashion.

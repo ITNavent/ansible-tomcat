@@ -195,6 +195,7 @@
     dest: "{{ tomcat_instance_path }}/lib/"
     owner: "{{ tomcat_user_name }}"
     group: "{{ tomcat_user_group }}"
+    remote_src: "{{ tomcat_extra_libs_remote }}"
     mode: 0640
 
 - name: Install WebApps
@@ -207,6 +208,7 @@
     dest: "{{ tomcat_instance_path }}/webapps/"
     owner: "{{ tomcat_user_name }}"
     group: "{{ tomcat_user_group }}"
+    remote_src: "{{ tomcat_webapps_remote }}"
     mode: 0776
 
 - name: Install Service

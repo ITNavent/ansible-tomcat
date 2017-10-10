@@ -4,3 +4,4 @@ ansible/roles/
 *.sublime-workspace
 .DS_Store
 .idea/
+*.iml
