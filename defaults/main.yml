@@ -140,4 +140,6 @@ java_args: ""
 java_min_memory: -Xms1g
 java_max_memory: -Xmx1g
 extra_set_env: ""
+extra_set_env_before: ""
+extra_set_env_after: ""
 tomcat_force_shutdown_by_pid: false
