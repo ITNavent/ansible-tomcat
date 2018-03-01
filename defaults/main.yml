@@ -30,6 +30,7 @@ tomcat_catalina_opts: ""
 tomcat_base_dir: /opt
 tomcat_catalina_home: "{{ tomcat_base_dir }}/tomcat"
 tomcat_instance_path: "{{ tomcat_base_dir }}/tomcat"
+tomcat_working_directory: ""
 
 tomcat_prefer_ipv4: true
 tomcat_override_uri_encoding: ""

@@ -29,5 +29,9 @@ ExecStop={{ tomcat_instance_path }}/bin/shutdown.sh
 User={{ tomcat_user_name }}
 Group={{ tomcat_user_group }}
 
+{% if tomcat_working_directory not in (None, "") %}
+WorkingDirectory={{ tomcat_working_directory }}
+{% endif %}
+
 [Install]
 WantedBy=multi-user.target
