@@ -24,6 +24,8 @@ tomcat_port_connector: 8080
 tomcat_port_redirect: 8443
 tomcat_port_ajp: 8009
 
+tomcat_connection_timeout: 20000
+
 tomcat_java_opts: ""
 tomcat_catalina_opts: ""
 
