@@ -24,12 +24,16 @@ tomcat_port_connector: 8080
 tomcat_port_redirect: 8443
 tomcat_port_ajp: 8009
 
+tomcat_connection_timeout: 20000
+tomcat_keepalive_timeout: ""
+
 tomcat_java_opts: ""
 tomcat_catalina_opts: ""
 
 tomcat_base_dir: /opt
 tomcat_catalina_home: "{{ tomcat_base_dir }}/tomcat"
 tomcat_instance_path: "{{ tomcat_base_dir }}/tomcat"
+tomcat_working_directory: ""
 
 tomcat_prefer_ipv4: true
 tomcat_override_uri_encoding: ""

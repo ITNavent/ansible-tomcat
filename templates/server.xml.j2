@@ -39,8 +39,11 @@
   <Service name="Catalina">
 
     <Connector port="{{ tomcat_port_connector }}" protocol="HTTP/1.1"
-               connectionTimeout="20000"
+               connectionTimeout="{{ tomcat_connection_timeout }}"
                redirectPort="{{ tomcat_port_redirect }}"
+{% if tomcat_keepalive_timeout not in (None, "") %}
+               keepAliveTimeout="{{ tomcat_keepalive_timeout }}"
+{% endif %}
 {% if tomcat_override_uri_encoding not in (None, "") %}
                URIEncoding="{{ tomcat_override_uri_encoding }}"
 {% endif %}

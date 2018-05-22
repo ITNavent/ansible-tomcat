@@ -1,4 +1,14 @@
+#
+# {{ ansible_managed }}
+#
+
+{% if extra_set_env_before is iterable %}
+{% for extra in extra_set_env_before %}
+{{ extra }}
+{% endfor %}
+{% else %}
 {{ extra_set_env_before }}
+{% endif %}
 
 export JAVA_OPTS="${JAVA_OPTS} {{ java_args }} -javaagent:{{ newrelic_home }}/newrelic.jar"
 export CATALINA_OPTS="{{ java_min_memory}}"
@@ -7,6 +17,12 @@ export CATALINA_OPTS="$CATALINA_OPTS {{ java_max_memory }}"
 export CATALINA_PID="$CATALINA_BASE/bin/catalina.pid"
 {% endif %}
 
+{% if extra_set_env_after is iterable %}
+{% for extra in extra_set_env_after %}
+{{ extra }}
+{% endfor %}
+{% else %}
 {{ extra_set_env_after }}
+{% endif %}
 
 {{extra_set_env}}
