@@ -4,6 +4,8 @@
 # 7.0.72
 # 8.0.38
 # 8.5.6
+# 8.5.12
+# 8.5.32
 # 9.0.0.M18
 
 tomcat_version: "8.5.6"
@@ -134,6 +136,9 @@ tomcat_version_specific:
     web_xml_schema_version: 3.1
   "8.5.12":
     checksum: md5:c2e6eca5a0642d1e30fbe3573b96ab75
+    web_xml_schema_version: 3.1
+  "8.5.32":
+    checksum: md5:037baec52b292ff08a4f87ab2965a2ca
     web_xml_schema_version: 3.1
   "9.0.0.M18":
     checksum: md5:626e16b93de65b2a58714ed50f00d9f9
