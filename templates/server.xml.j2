@@ -54,6 +54,9 @@
 {% if tomcat_enable_double_http_header_size not in (None, "") %}
 				maxHttpHeaderSize="{{ tomcat_enable_http_header_size }}"
 {% endif %}
+{% if tomcat_max_threads not in (None, "") %}
+                maxThreads="{{ tomcat_max_threads }}"
+{% endif %}
     />
 
     <!--
