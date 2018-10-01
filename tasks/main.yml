@@ -176,6 +176,7 @@
     owner: "{{ tomcat_user_name }}"
     group: "{{ tomcat_user_group }}"
     mode: 0640
+  tags: ['config', 'java_opts_config']
 
 - name: Install shutdown file
   template:
